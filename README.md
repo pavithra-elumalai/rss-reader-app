@@ -1,74 +1,84 @@
-<<<<<<< HEAD
-# rss-reader-app
-=======
-# Getting Started with Create React App
+# RSS Reader App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, desktop-based RSS Reader application built using **Electron**, **React**, and **SQLite**, inspired by the clean UI of **Raven Reader**. This application enables users to manage RSS feeds, read articles offline, and navigate through a minimal and intuitive interface powered by **Ant Design**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Add and manage RSS feeds with ease  
+- Offline reading supported via local SQLite database  
+- Clean, Raven Reader–style layout with sidebar and main article view  
+- Planned enhancements: dark mode, search functionality, and OPML import/export  
+- Built with performance and usability in mind
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tech Stack
 
-### `npm test`
+| Frontend       | Backend / Storage | UI Framework | Additional Tools |
+|----------------|-------------------|--------------|------------------|
+| React          | SQLite            | Ant Design   | Electron         |
+| Context API    | Node.js (IPC)     | Custom Icons | RSS Parser       |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Folder Structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+rss-reader-app/
+├── public/
+├── src/
+│ ├── components/
+│ ├── context/ # FeedContext for global state
+│ ├── db/ # SQLite DB handling
+│ ├── preload.js # Electron preload script for IPC
+│ ├── main.js # Electron entry point
+│ └── App.jsx
+├── package.json
+└── README.md
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Getting Started
 
-### `npm run eject`
+### 1. Clone the Repository
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+git clone https://github.com/pavithra-elumalai/rss-reader-app.git
+cd rss-reader-app
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 2. Install Dependencies
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm install
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### 3. Run the App in Development Mode
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run electron:dev
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## RSS Parsing and Offline Support
 
-### Analyzing the Bundle Size
+The app fetches articles from RSS feeds using a parser and stores them in a local SQLite database via Electron’s IPC bridge. This allows for offline reading and persistence between sessions.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
+## Roadmap
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- [ ] Dark mode support  
+- [ ] Article/feed search functionality  
+- [ ] Auto-refresh for new articles  
+- [ ] OPML import/export support
 
-### Advanced Configuration
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Author
 
-### Deployment
+**Pavithra Elumalai**  
+GitHub: [pavithra-elumalai](https://github.com/pavithra-elumalai)  
+MERN Stack Developer with 3.8+ years of experience
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
->>>>>>> 096e41a (RSS Application)
