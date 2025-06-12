@@ -25,17 +25,7 @@ A modern, desktop-based RSS Reader application built using **Electron**, **React
 
 ## Folder Structure
 
-rss-reader-app/
-├── public/
-├── src/
-│ ├── components/
-│ ├── context/ # FeedContext for global state
-│ ├── db/ # SQLite DB handling
-│ ├── preload.js # Electron preload script for IPC
-│ ├── main.js # Electron entry point
-│ └── App.jsx
-├── package.json
-└── README.md
+<pre lang="markdown"> ## Project Structure ``` rss-reader-app/ ├── public/ ├── src/ │ ├── components/ │ ├── context/ # FeedContext for global state │ ├── db/ # SQLite DB handling │ ├── preload.js # Electron preload script for IPC │ ├── main.js # Electron entry point │ └── App.jsx ├── package.json └── README.md ``` </pre>
 
 ---
 
