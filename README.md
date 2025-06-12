@@ -46,20 +46,20 @@ rss-reader-app/
 ```bash
 git clone https://github.com/pavithra-elumalai/rss-reader-app.git
 cd rss-reader-app
-
+```
 ## Getting Started
 
 ### 2. Install Dependencies
 
 ```bash
 npm install
-
+```
 
 ### 3. Run the App in Development Mode
 
 ```bash
 npm run electron:dev
-
+```
 
 ## RSS Parsing and Offline Support
 
